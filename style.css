@@ -45,8 +45,7 @@ input:focus, textarea:focus {
 }
 
 button {
-    width: 250px;
-    text-align: center;
+    width: 500px;
     padding: 10px 15px;
     border: 1px;
     border-radius: 6px;
@@ -55,7 +54,6 @@ button {
     margin: 20px 80px;
     cursor: pointer;
     transition-duration: 0.4s;
-    align-items: center;
 }
 
 form button:hover{
