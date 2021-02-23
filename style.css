@@ -24,7 +24,8 @@ label {
     /*Para ter certeza que todos os labels tem o mesmo tamanho e estão propriamente alinhados*/
     display: inline-block;
     width: 80px;
-    text-align: right;
+    text-align: center;
+    font-size: 17px;
 }
 
 input, textarea {
@@ -32,11 +33,11 @@ input, textarea {
     font: 1em sans-serif;
     /* Para dar o mesmo tamanho a todos os campo de texto */
     width: 500px;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 
     /* Para harmonizar o look & feel das bordas nos campos de texto*/
     border: 1px solid #999;
+    border-radius: 6px;
 }
 
 input:focus, textarea:focus {
@@ -49,13 +50,14 @@ button {
     padding: 10px 15px;
     border: 1px;
     border-radius: 6px;
-    background-color: #2f6cb3;
+    background-color: rgb(3, 39, 243);
     font-size: 18px;
     margin: 20px 80px;
     cursor: pointer;
     transition-duration: 0.4s;
+    font-family: sans-serif;
 }
 
-form button:hover{
-    background-color: rgb(62, 105, 248)
+button:hover{
+    background-color: rgb(84, 199, 253)
 }
