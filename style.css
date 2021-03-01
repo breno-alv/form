@@ -30,7 +30,7 @@ label {
 
 input, textarea {
     /* Para certificar-se que todos os campos de texto tem as mesmas conf da fonte.  por padrão, textareas ter uma fonte monospace*/
-    font: 1em sans-serif;
+    font: 1,5em sans-serif;
     /* Para dar o mesmo tamanho a todos os campo de texto */
     width: 500px;
     box-sizing: border-box;
@@ -40,7 +40,7 @@ input, textarea {
     border-radius: 6px;
 }
 
-input:focus, textarea:focus {
+textarea:focus {
     /* Dar um pouco de destaque nos elementos ativos */
     border-color: rgb(10, 10, 10);
 }
