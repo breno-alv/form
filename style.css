@@ -1,5 +1,8 @@
+
+
 body{
-    background-color: rgb(251, 254, 255);
+    background-color: rgb(7, 155, 204);
+    font-family: Roboto, Arial, sans-serif;
 }
 
 h1{
@@ -30,6 +33,7 @@ label {
 
 input, textarea {
     /* Para dar o mesmo tamanho a todos os campo de texto */
+    resize: inherit;
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -48,7 +52,7 @@ button {
     padding: 10px 15px;
     border: 1px;
     border-radius: 6px;
-    background-color: rgb(3, 39, 243);
+    background-color: rgb(18, 70, 214);
     font-size: 18px;
     /*margin: 20px 80px;*/
     cursor: pointer;
@@ -57,5 +61,22 @@ button {
 }
 
 button:hover{
-    background-color: rgb(84, 199, 253)
+    background-color: rgb(7, 155, 204)
+}
+
+/* Animação do formulario */
+form {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
