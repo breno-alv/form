@@ -51,7 +51,7 @@ textarea{
     resize: inherit;
     width: 100%;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 50px;
     /* Para harmonizar o look & feel das bordas nos campos de texto*/
     border: 1px solid #999;
     border-radius: 6px;
