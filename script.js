@@ -12,14 +12,30 @@ function validar() {
         document.getElementById("email").focus();
         return false;
 
-    } 
+    }
+    
+    if (document.getElementById("msg").value ==""){
+        alert("Escreva uma mensagem");
+        document.getElementById("msg").focus();
+        return false;
 
-}
+    }
+    
+    else { //Abre um pop ups com uma mensagem 
+        document.getElementById("button")
+        .addEventListener("click", function validar() {
+         alert("Sua mensagem foi enviada com sucesso!!")
+    });
+}}
+    
 
-//bre um pop ups com uma mensagem 
-document.getElementById("button")
-.addEventListener("click", function () {
-alert("Sua mensagem foi enviada")
-});
+
+
+//document.getElementById("button")
+//.addEventListener("click", function validar() {
+//alert("Sua mensagem foi enviada")
+//});
+
+
 
 

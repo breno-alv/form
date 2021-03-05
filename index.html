@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Cadastro</title>
+    <title>Formulário de Contato</title>
 </head>
 <body>
     <h1>Formulário de Contato</h1>
-    <div id="principal">
         <form nome = "formContato" action="#" onsubmit ="validar()">
             <div>
                 <label for="nome">Nome:</label>
@@ -20,13 +19,23 @@
                 <input type="email" id="email" />
             </div>
             <div>
+                <label for="assunt">Assunto da Mensagem:</label>
+                <select name="assunt" id="assunt">
+                    <option value=""></option>
+                    <option value="email">E-mail</option>
+                    <option value="desktop">Desktop</option>
+                    <option value="notebook">Notebook</option>
+                    <option value="mouse">Mouse</option>
+                </select>
+            </div>
+            <div>
                 <label for="msg">Mensagem:</label>
                 <textarea id="msg"></textarea>
             </div>
-            <div id = "button">
-                <button class ="btn" type="submit">Enviar sua mensagem</button>
+            <div>
+                <button id = "button" class ="btn" type="submit">Enviar sua mensagem</button>
             </div>
-    </div>                
+                 
         </form>
     <script src="./script.js"></script>
 </body>
