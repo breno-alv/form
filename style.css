@@ -1,42 +1,62 @@
 :root{
     font-family: Roboto, Arial, sans-serif;
-}
-
-body{
-    background-color: rgb(7, 155, 204);
     
 }
 
+body{
+    background-color: rgb(5, 5, 5);
+    
+}
+
+
 h1{
+    margin: 10px auto;
+    max-width: 700px;
+    background-color: rgba(242, 245, 247,0.5);
+    padding: 10px 40px;
     text-align: center;
+    color: rgb(12, 12, 12);
+    border-radius: 0.4em;
+    
 }
 
 form {
-    /* Apenas para centralizar o form na página */
-    background-color:rgb(215, 216, 216);
-    margin: 0 auto;
-    width: 700px;
-     /* Para ver as bordas do formulário */
-    padding: 1em;
+    
+    background-color:rgba(239, 245, 245, 0.5);
+    margin: auto;
+    max-width: 700px;
+    padding: 15px 40px;
     border-radius: 1em;
+
+
 }
 
-form div + div {
-    margin-top: 2em;
-}
+/* div input{
+    ;
+} */
 
 label {
     /*Para ter certeza que todos os labels tem o mesmo tamanho e estão propriamente alinhados*/
     display: inline-block;
     width: 100%;
-    /*text-align: center;*/
     font-size: 17px;
-    color: rgb(116, 115, 115);
+    color: rgb(10, 10, 10);
+    margin-top: 0.5em;
     
 }
 
-input, select {
+input {
     /* Para dar o mesmo tamanho a todos os campo de texto */
+    resize: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+select {
     resize: inherit;
     width: 100%;
     box-sizing: border-box;
@@ -51,10 +71,10 @@ textarea{
     resize: inherit;
     width: 100%;
     box-sizing: border-box;
-    padding: 50px;
     /* Para harmonizar o look & feel das bordas nos campos de texto*/
     border: 1px solid #999;
     border-radius: 6px;
+    
 }
 
 textarea:focus {
@@ -62,21 +82,21 @@ textarea:focus {
     border-color: rgb(10, 10, 10);
 }
 
-button {
+button { /* Estilização do botão */
     width: 100%;
     padding: 10px 15px;
     border: 1px;
     border-radius: 6px;
-    background-color: rgb(18, 70, 214);
+    background-color: rgb(176, 177, 179);
     font-size: 18px;
-    /*margin: 20px 80px;*/
     cursor: pointer;
     transition-duration: 0.4s;
     font-family: sans-serif;
+    margin-top: 0.5em;
 }
 /*Animação no botão*/
 button:hover{
-    background-color: rgb(7, 155, 204)
+    background-color: rgb(255,69,0)
 }
 
 /* Animação do formulario */
@@ -84,7 +104,8 @@ form {
     animation-name: fade;
     animation-duration: 1s;
 }
-
+/* Ao atualizar a pagina 
+o formulario aprece lentamente na tela*/
 @keyframes fade{
     from{
         opacity: 0;

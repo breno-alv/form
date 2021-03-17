@@ -19,22 +19,35 @@ function validar() {
         document.getElementById("msg").focus();
         return false;
 
-    }
+    } 
+}   
+
+// document.getElementById("button")
+// .addEventListener("click", validar())
+//     alert("Mensagem enviada");
+
+
+
     
-    else { //Abre um pop ups com uma mensagem 
-        document.getElementById("button")
-        .addEventListener("click", function validar() {
-         alert("Sua mensagem foi enviada com sucesso!!")
-    });
-}}
+    // }else {
+    //     //Abre um pop ups com uma mensagem 
+    //     document.getElementById("button")
+    //     .addEventListener("click", validar());
+    // }
     
 
 
-
-//document.getElementById("button")
+// function envio(){
+//     alert("Sua mensagem foi enviada")
+// }    
+//Abre um pop ups com uma mensagem 
+//document
+//.getElementById("button")
 //.addEventListener("click", function validar() {
-//alert("Sua mensagem foi enviada")
+  //  alert("Sua mensagem foi enviada com sucesso!!")
 //});
+
+
 
 
 
